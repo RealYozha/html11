@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 @keyframes background {
     100% {
-        background-position: 15% 36%;
+        background-position: 15% 34%;
     }
 }
 
 body {
     display: flex;
     justify-content: center;
-    height: inherit;
+    align-items: center;
+    height: 100vh;
     font-family: 'IBM Plex Sans', sans-serif;
     color: #111111;
     background-image: url(https://i.pinimg.com/originals/83/5a/c6/835ac61b5e27f198494474cc8ede04b8.jpg);
@@ -48,13 +49,14 @@ a {
 
 a:hover {
     color: #89cc41;
+    transition: all 400ms linear 0ms;
 }
 
 input {
     margin: 0 auto;
     height: 50px;
     width: 80%;
-    border: solid, 0px, #ebebeb;
+    border: solid 2px #ebebeb;
     font-size: 15px;
     padding: 0 10px;
     margin-bottom: 20px;
@@ -63,7 +65,12 @@ input {
 }
 
 input:hover {
-    border: solid, 2px, #89cc41;
+    border: solid 2px #89cc41;
+    transition: all 400ms linear 0ms;
+}
+
+input:active {
+    border: solid 2px #89cc41;
 }
 
 button {
@@ -85,5 +92,6 @@ button {
 
 button:hover {
     background-color: #89cc41;
+    transition: all 400ms linear 0ms;
     cursor: pointer;
 }
